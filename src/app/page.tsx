@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* buttons section */}
       <div className="pt-10 flex justify-center space-x-4">
-        <Link href='/qoute' className="bg-blue-500 text-white px-[40px] py-[15px] rounded-md hover:bg-blue-50 transition duration-300">Get Qoute Now </Link>
+        <Link href='/qoute' className="bg-blue-500 text-white px-[40px] py-[15px] rounded-md hover:bg-transparent transition duration-300">Get Qoute Now </Link>
         <Link href='/learn' className="border border-blue-500 text-blue-500 px-[40px] py-[15px] rounded-[5px] hover:bg-blue-500 hover:text-white transition duration-200"> Learn More</Link>
       </div>
 
@@ -45,22 +45,53 @@ export default function Home() {
             <div className="pr-10 pt-8">
               <Image src='/images/red_divider.svg' alt="Divider" width={50} height={2} ></Image>
             </div>
-            <div className="pt-2 text-neutral-500 text-[14px] font-montserrat leading-6 tracking-wide text-left">
+            <div className="pt-2 text-neutral-500 text-[14px] font-montserrat leading-5 text-left">
 
-              The gradual accumulation of <br />information about atomic and <br /> information about atomic and <br /> small-scale behaviour...
+              The gradual accumulation of <br />information about atomic and <br /> small-scale behaviour...
             </div>
           </div>
         </div>
         {/* Box 2 */}
-        <div className="border border-blue-500 w-[328px] h-[292px] px-[40px] py-[15px] rounded-[5px] ">
-          Box 2
+        {/* Box 2 */}
+        <div className="border bg-white pr-10  pt-9 border-blue-500 w-[328px] h-[292px] px-[40px] py-[15px] rounded-[5px] ">
+          {/* Box 2 */}
+          {/* inner box */}
+          <div className="w-[70px] h-[76px] p-[22px] rounded-sm bg-green-300 "></div>
+          <div className="pt-4 text-black text-xl font-bold leading-6 translate-x-0 text-left font-montserrat">
+            <h5>
+              2,769 online courses
+            </h5>
+            <div className="pr-10 pt-8">
+              <Image src='/images/red_divider.svg' alt="Divider" width={50} height={2} ></Image>
+            </div>
+            <div className="pt-2 text-neutral-500 text-[14px] font-montserrat leading-5 text-left">
+
+              The gradual accumulation of <br />information about atomic and <br /> small-scale behaviour...
+            </div>
+          </div>
         </div>
 
         {/* Box 3 */}
-        <div className="border border-blue-500 w-[328px] h-[292px] px-[40px] py-[15px] rounded-[5px] ">
-          Box 3
+        {/* Box 3 */}
+        <div className="border bg-blue-500 pr-10  pt-9 border-blue-500 w-[328px] h-[292px] px-[40px] py-[15px] rounded-[5px] ">
+          {/* Box 3 */}
+          {/* inner box */}
+          <div className="w-[70px] h-[76px] p-[22px] rounded-sm bg-white "></div>
+          <div className="pt-4 text-white text-xl font-bold leading-6 translate-x-0 text-left font-montserrat">
+            <h5>
+              training Courses
+            </h5>
+            <div className="pr-10 pt-8">
+              <Image src='/images/white_divider.svg' alt="Divider" width={50} height={2} ></Image>
+            </div>
+            <div className="pt-2 text-white text-[14px] font-montserrat leading-5 text-left">
+
+              The gradual accumulation of <br /> information about atomic and <br /> small-scale behaviour...
+            </div>
+          </div>
         </div>
       </div>
+      <div className="pt-8"></div>
     </div >
 
   );
