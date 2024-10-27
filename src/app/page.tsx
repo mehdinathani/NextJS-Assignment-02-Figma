@@ -1,101 +1,67 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <div className="pt-8 flex justify-center">
+        <h1 className="text-sky-500 text-base font-bold leading-6 tracking-wide text-center font-montserrat">
+          Welcome
+        </h1>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* New Text Below */}
+      <div className="pt-12 flex justify-center">
+        <h2 className="text-white text-[32px] md:text-[58px] font-bold leading-[40px] md:leading-[80px] tracking-wide text-center font-montserrat">
+          Selling on the <br /> internet like a pro
+        </h2>
+      </div>
+
+      {/* new paragraph */}
+      <div className="pt-8 flex justify-center ">
+        <p className="text-white text-[20px] font-montserrat leading-[30px] tracking-wide text-center ">
+          We know how large objects will act, but things on a <br />
+          small scale just do not act that way.
+        </p>
+      </div>
+
+      {/* buttons section */}
+      <div className="pt-10 flex justify-center space-x-4">
+        <Link href='/qoute' className="bg-blue-500 text-white px-[40px] py-[15px] rounded-md hover:bg-blue-50 transition duration-300">Get Qoute Now </Link>
+        <Link href='/learn' className="border border-blue-500 text-blue-500 px-[40px] py-[15px] rounded-[5px] hover:bg-blue-500 hover:text-white transition duration-200"> Learn More</Link>
+      </div>
+
+      {/* box section  */}
+      <div className="pt-10 flex justify-center space-x-4">
+        {/* Box 1 */}
+        <div className="border bg-white pr-10  pt-9 border-blue-500 w-[328px] h-[292px] px-[40px] py-[15px] rounded-[5px] ">
+          {/* Box 1 */}
+          {/* inner box */}
+          <div className="w-[70px] h-[76px] p-[22px] rounded-sm bg-pink-200 "></div>
+          <div className="pt-4 text-black text-xl font-bold leading-6 translate-x-0 text-left font-montserrat">
+            <h5>
+              training Courses
+            </h5>
+            <div className="pr-10 pt-8">
+              <Image src='/images/red_divider.svg' alt="Divider" width={50} height={2} ></Image>
+            </div>
+            <div className="pt-2 text-neutral-500 text-[14px] font-montserrat leading-6 tracking-wide text-left">
+
+              The gradual accumulation of <br />information about atomic and <br /> information about atomic and <br /> small-scale behaviour...
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        {/* Box 2 */}
+        <div className="border border-blue-500 w-[328px] h-[292px] px-[40px] py-[15px] rounded-[5px] ">
+          Box 2
+        </div>
+
+        {/* Box 3 */}
+        <div className="border border-blue-500 w-[328px] h-[292px] px-[40px] py-[15px] rounded-[5px] ">
+          Box 3
+        </div>
+      </div>
+    </div >
+
   );
 }
