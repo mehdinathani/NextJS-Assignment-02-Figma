@@ -27,8 +27,8 @@ export default function Home() {
 
       {/* buttons section */}
       <div className="pt-10 flex justify-center space-x-4">
-        <Link href='/qoute' className="bg-blue-500 text-white px-[40px] py-[15px] rounded-md hover:bg-transparent transition duration-300">Get Qoute Now </Link>
-        <Link href='/learn' className="border border-blue-500 text-blue-500 px-[40px] py-[15px] rounded-[5px] hover:bg-blue-500 hover:text-white transition duration-200"> Learn More</Link>
+        <Link href='/' className="bg-blue-500 text-white px-[40px] py-[15px] rounded-md hover:bg-transparent transition duration-300">Get Qoute Now </Link>
+        <Link href='/' className="border border-blue-500 text-blue-500 px-[40px] py-[15px] rounded-[5px] hover:bg-blue-500 hover:text-white transition duration-200"> Learn More</Link>
       </div>
 
       {/* box section  */}
